@@ -1,0 +1,35 @@
+<ion-view view-title="Words Ninja"style="background-image: url(img/2.jpg);background-size: cover;">
+  <ion-content class="padding">
+
+    <div class="card" style="opacity: 0.8">
+      <div class="item item-divider">
+        {{myWord.w}}
+      </div>
+      <div class="item item-text-wrap">
+        {{myWord.t}}
+      </div>
+    </div>
+
+    <div class="row" style="padding-bottom: 10%">
+      <div class="col-offset-10 col-33">
+        <button class="button button-outline button-dark"  style="width: 100%" ng-click="simple()">
+          太简单啦
+        </button>
+      </div>
+      <div class="col-40 col-offset-10">
+        <button class="button button-outline button-dark"  style="width: 100%" ng-click="hardd()">
+          继续学习
+        </button>
+      </div>
+    </div>
+
+   <img src="img/1.jpg"style="margin-left: 3%;width: 94%; opacity: 0.9;">
+
+    <div class="card"style="opacity: 0.8">
+      <div class="item item-text-wrap">
+        新学单词：{{point.now}}个
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
